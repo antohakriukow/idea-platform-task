@@ -1,5 +1,7 @@
 'use client';
 
+import Selectors from './selectors/Selectors';
+import Tickets from './tickets/Tickets';
 import { useGetTickets } from '@/hooks/useGetTickets';
 
 export default function Home() {
@@ -7,11 +9,8 @@ export default function Home() {
 
   return (
     <main>
-      <div>
-        {tickets?.map((ticket) => (
-          <p key={ticket.price}>{ticket.priceEUR}</p>
-        ))}
-      </div>
+      <Selectors />
+      <Tickets tickets={tickets} />
     </main>
   );
 }

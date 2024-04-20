@@ -1,5 +1,4 @@
-import { ITicket, ITicketData } from '../types/ticket.types';
-import { IExchangeRates } from './../types/exchange.types';
+import { ITicket, ITicketData, IExchangeRates } from '../types';
 
 const convertPrice = (price: number, exchangeRate: number) =>
   +(price / exchangeRate).toFixed(2);

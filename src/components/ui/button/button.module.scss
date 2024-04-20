@@ -1,0 +1,4 @@
+.button {
+  @apply flex flex-row items-center justify-center px-4 py-2 text-white rounded-md max-w-40 min-w-24 text-lg;
+  line-height: 1.4;
+}

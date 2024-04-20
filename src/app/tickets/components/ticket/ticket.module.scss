@@ -1,0 +1,30 @@
+.container {
+  @apply grid bg-white rounded-md mb-4 air-block min-h-32;
+  grid-template-columns: 1fr 2.3fr;
+
+  > div:nth-of-type(1) {
+    @apply p-4 flex flex-col items-center justify-center;
+
+    > button {
+      @apply mt-4;
+    }
+  }
+
+  > div:nth-of-type(2) {
+    @apply p-4 flex flex-row justify-between items-start;
+  }
+}
+
+@media (max-width: '480px') {
+  .container {
+    @apply flex flex-col-reverse;
+
+    > div:nth-of-type(1) {
+      @apply flex-row items-center justify-between;
+
+      > button {
+        @apply m-0;
+      }
+    }
+  }
+}

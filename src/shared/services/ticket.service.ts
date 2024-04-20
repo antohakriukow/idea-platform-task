@@ -1,5 +1,5 @@
-import { convertSnakeToCamelCase } from '../utils/convertSnakeToCamelCase';
-import { ITicketData } from '../types/ticket.types';
+import { convertSnakeToCamelCase } from '../utils';
+import { ITicketData } from '../types';
 import mockTicketsData from '../mocks/tickets.data.json';
 
 class TicketService {
