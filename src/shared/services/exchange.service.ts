@@ -1,12 +1,12 @@
-import { IExchangeRates } from '../types/exchange.types';
+import { TypeExchangeRates } from '../types';
 
 class ExchangeService {
   private USD_RATE = 32;
 
   private EUR_RATE = 42;
 
-  getRates(): IExchangeRates {
-    return { usd: this.USD_RATE, eur: this.EUR_RATE };
+  getRates(): TypeExchangeRates {
+    return { USD: this.USD_RATE, EUR: this.EUR_RATE };
   }
 }
 export const exchangeService = new ExchangeService();

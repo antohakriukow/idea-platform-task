@@ -1,4 +1,5 @@
 import { Carrier } from './carrier.types';
+import { Currency } from './exchange.types';
 import { Origin } from './origin.types';
 
 export interface ITicketData {
@@ -15,7 +16,6 @@ export interface ITicketData {
   price: number;
 }
 
-export interface ITicket extends ITicketData {
-  priceUSD: number;
-  priceEUR: number;
+export interface ITicket extends Omit<ITicketData, 'price'> {
+  price: { [key in keyof typeof Currency]: number };
 }

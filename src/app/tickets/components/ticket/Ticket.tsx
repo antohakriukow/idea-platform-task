@@ -16,7 +16,7 @@ const Ticket: FC<Props> = ({ ticket }) => {
       <div>
         <CarrierLogo carrier={ticket.carrier} />
         <Button
-          text={`Купить за ${ticket.price}`}
+          text={`Купить за ${ticket.price.RUB}`}
           onClick={handleAddToCart}
         />
       </div>

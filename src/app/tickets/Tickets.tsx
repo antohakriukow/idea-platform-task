@@ -8,6 +8,7 @@ interface Props {
 }
 
 const Tickets: FC<Props> = ({ tickets }) => {
+  console.log(tickets);
   return (
     <div>
       {!!tickets.length &&
