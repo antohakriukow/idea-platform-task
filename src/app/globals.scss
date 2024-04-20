@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex flex-col px-14 select-none min-h-screen bg-background;
+  @media (max-width: 680px) {
+    @apply px-8;
+  }
+  > main {
+    @apply flex flex-col flex-1 relative;
+  }
+}
