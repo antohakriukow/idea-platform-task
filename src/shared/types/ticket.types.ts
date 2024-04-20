@@ -1,5 +1,5 @@
 import { Carrier } from './carrier.types';
-import { Currency } from './exchange.types';
+import { Currency } from './currency.types';
 import { Origin } from './origin.types';
 
 export interface ITicketData {

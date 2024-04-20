@@ -8,6 +8,7 @@ interface Props {
   text: string;
   color?: TextColor;
   isUppercase?: boolean;
+  isSemiBold?: boolean;
 }
 
 const Text: FC<Props> = ({
@@ -15,6 +16,7 @@ const Text: FC<Props> = ({
   size = Size.M,
   color = TextColor.DEFAULT,
   isUppercase = false,
+  isSemiBold = false,
 }) => {
   return (
     <p
@@ -23,6 +25,7 @@ const Text: FC<Props> = ({
         [styles.large]: size === Size.L,
         [styles.small]: size === Size.S,
         [styles.textUppercase]: isUppercase,
+        [styles.textSemiBold]: isSemiBold,
       })}
     >
       {text}

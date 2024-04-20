@@ -14,6 +14,10 @@
   @apply uppercase;
 }
 
+.textSemiBold {
+  @apply font-semibold;
+}
+
 @media (max-width: '600px') {
   .text {
     @apply text-xs;
