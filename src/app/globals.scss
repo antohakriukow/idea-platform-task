@@ -9,8 +9,11 @@ body {
   > main {
     @apply flex-1 grid gap-5;
     grid-template-columns: 240px 1fr;
-    > div {
+    > div:last-of-type {
       @apply flex-1;
+    }
+    > div:first-of-type {
+      @apply h-auto max-h-[350px];
     }
   }
 

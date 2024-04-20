@@ -1,18 +1,18 @@
 .container {
-  @apply grid grid-flow-col items-center rounded-lg box-border;
+  @apply grid grid-flow-col items-center rounded-md box-border p-4;
 }
 
 .option {
-  @apply block px-4 py-3 text-primary-500 cursor-pointer box-border border-r-[1px] border-y-[1px] border-gray-300;
+  @apply block px-4 py-2 text-primary-500 cursor-pointer box-border border-r-[1px] border-y-[1px] border-gray-300;
 
   &:nth-of-type(1) {
     @apply border-l-[1px];
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
   }
   &:last-of-type {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
     border-left: none;
   }
 

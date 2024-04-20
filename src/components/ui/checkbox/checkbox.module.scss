@@ -1,0 +1,35 @@
+.container {
+  @apply flex flex-row items-center justify-between px-4 py-2;
+  > p {
+    @apply text-transparent uppercase text-sm font-semibold  cursor-pointer;
+  }
+
+  &:hover {
+    @apply bg-primary-100;
+    > p {
+      @apply text-primary-500;
+    }
+  }
+}
+
+.clickArea {
+  @apply flex flex-row items-center cursor-pointer;
+  > p {
+    @apply mx-2 text-sm text-gray-500;
+  }
+}
+
+.checkbox {
+  @apply flex items-center justify-center h-6 w-6 border-[1px] border-gray-300 rounded-md;
+}
+
+.checkmark {
+  @apply w-2.5 h-1.5 border-l-[2px] border-b-[2px] -rotate-45 -translate-y-0.5;
+}
+
+.active {
+  .checkbox,
+  .checkmark {
+    @apply border-primary-500;
+  }
+}

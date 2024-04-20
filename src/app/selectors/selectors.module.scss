@@ -1,3 +1,8 @@
 .container {
-  @apply air-block bg-white h-72 p-4;
+  @apply air-block bg-white py-4;
+  > div {
+    > p {
+      @apply px-4;
+    }
+  }
 }

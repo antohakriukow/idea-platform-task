@@ -9,14 +9,11 @@ export const filtersSlice = createSlice({
   name: 'filters',
   initialState,
   reducers: {
-    addStopsCount: (state, action: PayloadAction<number>) => {
-      state.stops.push(action.payload);
-    },
-    removeStopsCount: (state, action: PayloadAction<number>) => {
-      state.stops.filter((stopsCount) => stopsCount !== action.payload);
+    setStopsCount: (state, action: PayloadAction<number[]>) => {
+      state.stops = action.payload;
     },
   },
 });
 
-export const { addStopsCount, removeStopsCount } = filtersSlice.actions;
+export const { setStopsCount } = filtersSlice.actions;
 export const filtersReducer = filtersSlice.reducer;
