@@ -3,7 +3,7 @@ import {
   COLOR_PRIMARY_100,
   COLOR_PRIMARY_500,
   COLOR_SECONDARY,
-} from './src/app/shared/styles/colors';
+} from './src/shared/styles/colors';
 import type { Config } from 'tailwindcss';
 const colors = require('tailwindcss/colors');
 
