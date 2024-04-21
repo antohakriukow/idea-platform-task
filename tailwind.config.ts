@@ -7,6 +7,7 @@ import {
   COLOR_SECONDARY,
 } from './src/shared/styles/colors';
 import type { Config } from 'tailwindcss';
+
 const colors = require('tailwindcss/colors');
 const plugin = require('tailwindcss/plugin');
 
@@ -41,7 +42,8 @@ const config: Config = {
     },
   },
   plugins: [
-    plugin(({ addComponents, theme }) => {
+    // @ts-ignore
+    plugin(function ({ addComponents, theme }) {
       addComponents({
         '.air-block': {
           borderRadius: theme('borderRadius.layout'),

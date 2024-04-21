@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 2.3fr;
 
   > div:nth-of-type(1) {
-    @apply p-4 flex flex-col items-center justify-center;
+    @apply p-4 flex flex-col items-center justify-center border-r border-r-gray-300;
 
     > button {
       @apply mt-4;

@@ -23,16 +23,17 @@
     @apply text-xs;
   }
 
+  .small {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
   .large {
     @apply text-2xl;
   }
 }
 
 @media (max-width: '360px') {
-  .text {
-    @apply text-xs;
-  }
-
   .large {
     @apply text-xl;
   }
