@@ -1,11 +1,11 @@
 import { FC } from 'react';
-import { Button, CarrierLogo } from '@/components';
 import TicketInfo from '../ticket-info/TicketInfo';
 import StopsCount from '../stops-count/StopsCount';
+import { Button, CarrierLogo } from '@/components';
 import { ITicket } from '@/shared/types';
-import styles from './ticket.module.scss';
 import { useTypedSelector } from '@/hooks';
 import { getCurrencySymbol } from '@/shared/utils';
+import styles from './ticket.module.scss';
 
 interface Props {
   ticket: ITicket;

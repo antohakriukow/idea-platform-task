@@ -1,5 +1,5 @@
+import { Checkbox } from '@/components';
 import { getStopsCountText } from '@/shared/utils';
-import Checkbox from '../../../components/ui/checkbox/Checkbox';
 
 export interface Props<T> {
   options: T[];

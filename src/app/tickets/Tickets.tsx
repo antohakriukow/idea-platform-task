@@ -12,7 +12,7 @@ const Tickets: FC<Props> = ({ tickets }) => {
   const stops = useTypedSelector((state) => state.filters.stops);
   const filteredTickets = tickets
     .filter((ticket) => stops.includes(ticket.stops))
-    .sort((a, b) => a.stops - b.stops);
+    .sort((a, b) => a.price.RUB - b.price.RUB);
 
   return (
     <div>
