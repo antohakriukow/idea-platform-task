@@ -1,0 +1,20 @@
+.container {
+  @apply air-block bg-white py-4 h-min rounded-md;
+  > div {
+    > p {
+      @apply px-4;
+    }
+  }
+
+  @media (max-width: '860px') {
+    @apply flex flex-col items-start;
+  }
+}
+
+.currency {
+  @apply my-4;
+}
+
+.handler {
+  @apply w-full h-min pr-4 flex flex-row items-center justify-between cursor-pointer;
+}

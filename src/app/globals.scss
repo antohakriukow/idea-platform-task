@@ -3,11 +3,28 @@
 @tailwind utilities;
 
 body {
-  @apply flex flex-col px-14 select-none min-h-screen bg-background;
-  @media (max-width: 680px) {
+  @apply flex flex-col select-none min-h-screen bg-background mx-auto px-8;
+  max-width: 1280px;
+
+  > main {
+    @apply grid gap-5;
+    grid-template-columns: 240px 1fr;
+    > div {
+      @apply flex-1;
+    }
+  }
+
+  @media (max-width: 1280px) {
     @apply px-8;
   }
-  > main {
-    @apply flex flex-col flex-1 relative;
+
+  @media (max-width: 860px) {
+    > main {
+      @apply flex flex-col;
+    }
+  }
+
+  @media (max-width: 530px) {
+    @apply px-4;
   }
 }

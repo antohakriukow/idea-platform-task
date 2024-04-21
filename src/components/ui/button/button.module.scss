@@ -1,0 +1,11 @@
+.button {
+  @apply flex flex-row items-center justify-center px-4 py-2 text-white rounded-md text-lg w-44;
+  line-height: 1.4;
+
+  @media (max-width: '580px') {
+    @apply w-auto min-w-24 px-2;
+  }
+  @media (max-width: '480px') {
+    @apply w-32;
+  }
+}

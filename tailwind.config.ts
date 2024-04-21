@@ -1,11 +1,15 @@
 import {
   COLOR_BACKGROUND,
+  COLOR_GRAY_300,
+  COLOR_GRAY_500,
   COLOR_PRIMARY_100,
   COLOR_PRIMARY_500,
   COLOR_SECONDARY,
-} from './src/app/shared/styles/colors';
+} from './src/shared/styles/colors';
 import type { Config } from 'tailwindcss';
+
 const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin');
 
 const config: Config = {
   content: [
@@ -23,6 +27,10 @@ const config: Config = {
         100: COLOR_PRIMARY_100,
         500: COLOR_PRIMARY_500,
       },
+      gray: {
+        300: COLOR_GRAY_300,
+        500: COLOR_GRAY_500,
+      },
       secondary: COLOR_SECONDARY,
     },
     extend: {
@@ -33,6 +41,17 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // @ts-ignore
+    plugin(function ({ addComponents, theme }) {
+      addComponents({
+        '.air-block': {
+          borderRadius: theme('borderRadius.layout'),
+          backgroundColor: theme('colors.gray.950'),
+          boxShadow: theme('boxShadow.lg'),
+        },
+      });
+    }),
+  ],
 };
 export default config;

@@ -1,0 +1,18 @@
+.container {
+  @apply min-w-32 text-center;
+  > div {
+    @apply flex flex-row items-center;
+
+    > line {
+      @apply w-full h-[1px] bg-gray-300;
+    }
+  }
+
+  @media (max-width: '540px') {
+    @apply min-w-20;
+  }
+
+  @media (max-width: '360px') {
+    @apply min-w-12;
+  }
+}

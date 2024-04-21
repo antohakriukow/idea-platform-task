@@ -1,0 +1,45 @@
+.text {
+  @apply text-sm;
+}
+
+.large {
+  @apply text-4xl;
+}
+
+.small {
+  @apply text-xs;
+}
+
+.textUppercase {
+  @apply uppercase;
+}
+
+.textSemiBold {
+  @apply font-semibold;
+}
+
+@media (max-width: '600px') {
+  .text {
+    @apply text-xs;
+  }
+
+  .small {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .large {
+    @apply text-2xl;
+  }
+}
+
+@media (max-width: '360px') {
+  .large {
+    @apply text-xl;
+  }
+
+  .small {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
